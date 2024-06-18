@@ -17,11 +17,24 @@ function getHumanChoice() {
     } 
 };
 
-console.log(getHumanChoice());
+let humanScore = 0;
+let computerScore = 0;
 
-// let humanScore = 0;
-// let computerScore = 0;
-
-// function playRound(humanChoice, computerChoice) {
-
-// }
+// Game logic
+function playRound(humanChoice, computerChoice) {
+    let result = "";
+    if((humanChoice === "rock" && computerChoice === "scissor") || 
+        (humanChoice === "paper" && computerChoice === "rock") ||
+        (humanChoice === "scissor" && computerChoice === "paper")) {
+        result = `You win! ${humanChoice} beats ${computerChoice}`;
+        humanScore++;
+    }
+    else if (humanChoice === computerChoice) {
+        result = "Its a draw!";
+    }
+    else {
+        result = `You lose! ${computerChoice} beats ${humanChoice}`;
+        computerScore++;
+    }
+    console.log(result);
+};
