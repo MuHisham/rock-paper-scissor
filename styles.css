@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
 * {
-    font-family: "IBM Plex Sans";
+    font-family: "IBM Plex Sans", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,7 +64,7 @@ main {
     margin-bottom: 30px;
     font-size: 1.95em;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
 }
   
 .instC {
